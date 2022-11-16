@@ -40,6 +40,18 @@ $( function() {
     });
   } );
 
+$( function() {
+    var spinner = $( "#spinner" ).spinner();
+ 
+    $( "#disable" ).on( "click", function() {
+      if ( spinner.spinner( "option", "disabled" ) ) {
+        spinner.spinner( "enable" );
+      } else {
+        spinner.spinner( "disable" );
+      }
+    });
+  } );
+
   $( function() {
     var spinner = $( "#spinner1" ).spinner();
  
